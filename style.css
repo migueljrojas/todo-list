@@ -1,0 +1,9 @@
+.titulo {
+  color: #00cc00
+}
+.options, .list-header, .list-main, .list-footer {
+  display: flex;
+}
+.newlist {
+  margin-right: 20px;
+}

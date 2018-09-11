@@ -2,9 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link
+      href="./style.css"
+      rel="stylesheet"
+      type="text/css">
+    <title>
+        "To-Do List"
+    </title>
   </head>
   <body>
-    <h1>"Hello World"</h1>
-  </body> 
+    <h1 class="titulo"> To-Do List </h1>
+    <div class="options">
+      <div class="newlist">
+        <span> Add New List </span>
+        <button> + </button>
+      </div>
+      <div class="clone">
+        <span> Clone </span>
+        <button> + </button>
+      </div>
+    </div>
+    <div class="list">
+      <header class="list-header">
+        <button class="newlistitem"> + </button>
+        <button class="deletelistitem"> + </button>
+        <button class="listoptions"> + </button>
+      </header>
+      <main class="list-main">
+        <div class="list-item">
+          <input type="checkbox" id="box1"/>
+          <label for="box1" contenteditable></label>
+          <button> Edit </button>
+          <button> Save </button>
+        </div>
+      </main>
+      <footer class="list-footer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </footer>
+    </div>
+  </body>
 </html>
