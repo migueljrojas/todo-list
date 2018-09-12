@@ -1,28 +1,31 @@
 .titulo {
-  color: #00cc00
+  color: #00cc00;
+  background-color: blue;
 }
 
 .options {
   display: flex;
+  background-color: cyan;
 }
+
+body {
+    background-color: teal;
+}
+
 .clone {
   margin-left: 20px;
 }
 
 .list-main {
-  width: 300px;
   height: 100px;
-  border-left: solid 0.1em;
-  border-right: solid 0.1em;
-  border-color: black;
+  background-color: yellow;
+  border-top: solid 5px yellow;
 }
 
 .list-footer {
- width: 300px;
  height: 20px;
- border: solid 0.1em;
- border-color: black;
  text-align: center;
+ background-color:orange;
 }
 
 .list-footer span {
@@ -32,26 +35,33 @@
 .list-footer input {
   width: 10px;
   height: 10px;
+  font-size: 10px
 }
 
 .list-header {
- width: 300px;
  height: 25px;
- border: solid 0.1em;
- border-color: black;
- align-self: center;
+ text-align: center;
+ background-color: orange;
 }
 
-.list {
+.list-header, .list-footer, .list-main {
+  width: 400px;
+}
+
+#list {
   margin-top: 20px;
 }
 
-.list-options, .delete-list-item {
+#list-options, #delete-list-item {
   float: right;
+  margin-top: 2.05px;
+  margin-right: 5px;
 }
 
-.new-list-item {
-  float:left;
+#new-list-item {
+  float: left;
+  margin-left: 5px;
+  margin-top: 2.05px;
 }
 
 #ttask {
@@ -67,4 +77,25 @@
 #ctask {
   display: inline-block;
   margin:0 auto;
+}
+
+.list-item1, .list-item2, .list-item3 {
+  display: inline-block;
+  min-width: 100%;
+}
+
+.edit, .save {
+  float:right;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+#textbox1 {
+  background-color: yellow;
+  border-style: none;
+}
+
+.list-footer input {
+  background-color: orange;
+  border-style: none;
 }
