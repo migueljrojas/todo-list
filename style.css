@@ -1,9 +1,70 @@
 .titulo {
   color: #00cc00
 }
-.options, .list-header, .list-main, .list-footer {
+
+.options {
   display: flex;
 }
-.newlist {
-  margin-right: 20px;
+.clone {
+  margin-left: 20px;
+}
+
+.list-main {
+  width: 300px;
+  height: 100px;
+  border-left: solid 0.1em;
+  border-right: solid 0.1em;
+  border-color: black;
+}
+
+.list-footer {
+ width: 300px;
+ height: 20px;
+ border: solid 0.1em;
+ border-color: black;
+ text-align: center;
+}
+
+.list-footer span {
+  font-size: 10px
+}
+
+.list-footer input {
+  width: 10px;
+  height: 10px;
+}
+
+.list-header {
+ width: 300px;
+ height: 25px;
+ border: solid 0.1em;
+ border-color: black;
+ align-self: center;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.list-options, .delete-list-item {
+  float: right;
+}
+
+.new-list-item {
+  float:left;
+}
+
+#ttask {
+  float: left;
+  margin-left: 5px
+}
+
+#ptask {
+ float: right;
+ margin-right: 5px
+}
+
+#ctask {
+  display: inline-block;
+  margin:0 auto;
 }
