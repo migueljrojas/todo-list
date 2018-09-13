@@ -1,9 +1,101 @@
 .titulo {
-  color: #00cc00
+  color: #00cc00;
+  background-color: blue;
 }
-.options, .list-header, .list-main, .list-footer {
+
+.options {
   display: flex;
+  background-color: cyan;
 }
-.newlist {
-  margin-right: 20px;
+
+body {
+    background-color: teal;
+}
+
+.clone {
+  margin-left: 20px;
+}
+
+.list-main {
+  height: 100px;
+  background-color: yellow;
+  border-top: solid 5px yellow;
+}
+
+.list-footer {
+ height: 20px;
+ text-align: center;
+ background-color:orange;
+}
+
+.list-footer span {
+  font-size: 10px
+}
+
+.list-footer input {
+  width: 10px;
+  height: 10px;
+  font-size: 10px
+}
+
+.list-header {
+ height: 25px;
+ text-align: center;
+ background-color: orange;
+}
+
+.list-header, .list-footer, .list-main {
+  width: 400px;
+}
+
+#list {
+  margin-top: 20px;
+}
+
+#list-options, #delete-list-item {
+  float: right;
+  margin-top: 2.05px;
+  margin-right: 5px;
+}
+
+#new-list-item {
+  float: left;
+  margin-left: 5px;
+  margin-top: 2.05px;
+}
+
+#ttask {
+  float: left;
+  margin-left: 5px
+}
+
+#ptask {
+ float: right;
+ margin-right: 5px
+}
+
+#ctask {
+  display: inline-block;
+  margin:0 auto;
+}
+
+.list-item1, .list-item2, .list-item3 {
+  display: inline-block;
+  min-width: 100%;
+}
+
+.edit, .save {
+  float:right;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+#textbox1 {
+  background-color: yellow;
+  border-style: none;
+}
+
+.list-footer input {
+  background-color: orange;
+  border-style: none;
 }
