@@ -1,6 +1,11 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 .titulo {
-  color: #00cc00;
-  background-color: blue;
+  color: #FFFFFF;
+  background-color: Blue;
+  margin: 0;
 }
 
 .options {
@@ -9,33 +14,54 @@
 }
 
 body {
-    background-color: teal;
+    background-color: MidnightBlue;
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding: 0;
 }
 
-.clone {
+.list {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.clone, .delete-list {
   margin-left: 20px;
 }
 
 .list-main {
-  height: 100px;
+  min-height: 100px;
   background-color: yellow;
-  border-top: solid 5px yellow;
+}
+
+.pending-task-div, .complete-task-div {
+  min-width: 100%;
+}
+
+.pending-task-header, .complete-task-header {
+  width: 400px;
+  background-color: blue;
+  color: white;
+  text-align: center;
 }
 
 .list-footer {
  height: 20px;
  text-align: center;
- background-color:orange;
+ background-color: orange;
 }
 
 .list-footer span {
-  font-size: 10px
-}
-
-.list-footer input {
-  width: 10px;
-  height: 10px;
-  font-size: 10px
+  font-size: 10px;
 }
 
 .list-header {
@@ -44,58 +70,103 @@ body {
  background-color: orange;
 }
 
-.list-header, .list-footer, .list-main {
-  width: 400px;
-}
-
-#list {
-  margin-top: 20px;
-}
-
-#list-options, #delete-list-item {
+.list-options {
   float: right;
   margin-top: 2.05px;
   margin-right: 5px;
 }
 
-#new-list-item {
+.new-list-item {
+  background: orange url("./Images/new.png") no-repeat center center / contain;
+  border: none;
   float: left;
   margin-left: 5px;
   margin-top: 2.05px;
 }
 
-#ttask {
+.total-task {
   float: left;
-  margin-left: 5px
+  margin-left: 5px;
 }
 
-#ptask {
+.pending-task {
  float: right;
- margin-right: 5px
+ margin-right: 5px;
 }
 
-#ctask {
+.completed-task {
   display: inline-block;
   margin:0 auto;
 }
 
-.list-item1, .list-item2, .list-item3 {
+.list-item {
   display: inline-block;
   min-width: 100%;
+  margin-bottom: 5px;
 }
 
-.edit, .save {
-  float:right;
-  margin-right: 5px;
+.textbox {
+  background-color: yellow;
+  border-style: none;
+  margin-left: 5px;
   margin-top: 2px;
 }
 
-#textbox1 {
-  background-color: yellow;
-  border-style: none;
+.list-options {
+  background: orange url("./Images/Options.png") no-repeat center center / contain;
+  border: none;
 }
 
-.list-footer input {
-  background-color: orange;
-  border-style: none;
+ #new-list-button, #clone-button, .delete-list-button {
+   background: orange url("./Images/new.png") no-repeat center center / contain;
+   background-color: cyan;
+   border: none;
+   height: 18px;
+   width: 18px;
+   margin-top: 2.5px;
+}
+
+.checkbox {
+  float:left;
+  margin-top: 5px;
+}
+
+.edit, .save, .delete-list-item, .complete {
+  float:right;
+  margin-right: 5px;
+  margin-top: 2px;
+  border: none;
+  height: 18px;
+  width: 18px;
+}
+
+.delete-list-item {
+  background: yellow url("./Images/Trashcan.png") no-repeat center center / contain;
+}
+
+.complete {
+  background: yellow url("./Images/complete.png") no-repeat center center / contain;
+}
+
+.edit {
+  background: yellow url("./Images/edit.png") no-repeat center center / contain;
+}
+
+.save {
+  background: yellow url("./Images/save.png") no-repeat center center / contain;
+}
+
+.new-list-item, .list-options {
+  height: 21px;
+  width: 23.8px;
+}
+
+.to-do-footer {
+  text-align: center;
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

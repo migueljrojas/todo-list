@@ -8,57 +8,56 @@
     </title>
   </head>
   <body>
-    <h1 class="titulo"> To-Do List </h1>
+    <div class="titulo">
+      <h1 class="titulo"> To-Do List </h1>
+    </div>
     <div class="options">
       <div class="new-list">
         <span>Add New List</span>
-        <button> + </button>
+        <button id="new-list-button"></button>
       </div>
       <div class="clone">
         <span>Clone</span>
-        <button> + </button>
+        <button id="clone-button"></button>
+      </div>
+      <div class="delete-list">
+        <span>Delete List</span>
+        <button class="delete-list-button"></button>
       </div>
     </div>
-    <div id="list">
+    <div id="list-container">
+<!--      <div class="list">
       <header class="list-header">
-        <button id="new-list-item"> + </button>
-        <button id="delete-list-item"> + </button>
-        <button id="list-options"> + </button>
+        <button class="new-list-item" id="test"></button>
+        <button class="list-options"></button>
       </header>
       <main class="list-main">
-        <div class="list-item1">
+        <div class="list-item">
           <input type="checkbox"/>
-          <input type="text" id="textbox1"/>
-          <button class="save">Save</button>
-          <button class="edit">Edit</button>
-        </div>
-        <div class="list-item2">
-          <input type="checkbox"/>
-          <input type="text" id="textbox1"/>
-          <button class="save">Save</button>
-          <button class="edit">Edit</button>
-        </div>
-        <div class="list-item3">
-          <input type="checkbox"/>
-          <input type="text" id="textbox1"/>
-          <button class="save">Save</button>
-          <button class="edit">Edit</button>
+          <input type="text" class="textbox1"/>
+          <button class="save"></button>
+          <button class="edit"></button>
+          <button class="delete-list-item"></button>
         </div>
       </main>
       <footer class="list-footer">
-        <div id="ttask">
-          <span>Total Tasks</span>
-          <input type="text" name="" value="">
+        <div class="total-task">
+          <span class="total-task-label">Total Tasks</span>
+          <span class="total-task-amount">10</span>
         </div>
-        <div id="ctask">
-          <span>Completed Tasks</span>
-          <input type="text" name="" value="">
+        <div class="completed-task">
+          <span class="completed-task-label">Completed Tasks</span>
+          <span class="completed-task-amount">5</span>
         </div>
-        <div id="ptask">
-          <span>Pending Tasks</span>
-          <input type="text" name="" value="">
+        <div class="pending-task">
+          <span class="pending-task-label">Pending Tasks</span>
+          <span class="pending-task-amount">5</span>
         </div>
       </footer>
-    </div>
+    </div> -->
+  </div>
+    <footer class="to-do-footer">To-Do List made by <strong>Cesar</strong>
+    </footer>
+    <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>
